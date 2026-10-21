@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>18.EvenOdd2Threads</module>
+        <module>PrintSequenceNThreads</module>
     </modules>
 
     <properties>

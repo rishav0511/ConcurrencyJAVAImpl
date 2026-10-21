@@ -92,7 +92,7 @@ Write a Java program that utilizes the StampedLock class for optimizing concurre
 [Click me to see the solution](https://www.w3resource.com/java-exercises/multithreading/java-multithreading-exercise-15.php)
 
 16. **Print Sequence using N Threads:** Generalize the Even/Odd problem. Given `N` threads, Thread 1 prints 1, Thread 2 prints 2... Thread N prints N, Thread 1 prints N+1, etc.
-17. **Print Even and Odd using Two Threads:** The classic problem. Thread 1 prints odd numbers, Thread 2 prints even numbers up to `N`. Practice this using:
-    * `wait()` and `notifyAll()` with a shared object monitor.
-    * `ReentrantLock` and `Condition` variables.
-    * Java `Semaphore`
+17. ~~**Print Even and Odd using Two Threads:** The classic problem. Thread 1 prints odd numbers, Thread 2 prints even numbers up to `N`. Practice this using:~~
+    * ~~`wait()` and `notifyAll()` with a shared object monitor.~~
+    * ~~`ReentrantLock` and `Condition` variables.~~
+    * ~~Java `Semaphore`~~

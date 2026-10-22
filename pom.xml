@@ -16,6 +16,7 @@
         <module>DiningPhilosophers</module>
         <module>ThreadSafeLRU</module>
         <module>ThreadSafeStack</module>
+        <module>CustomThreadPool</module>
     </modules>
 
     <properties>

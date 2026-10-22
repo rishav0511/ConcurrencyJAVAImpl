@@ -112,7 +112,7 @@ These test your core understanding of `wait()`, `notifyAll()`, `ReentrantLock`, 
 
 Interviewers often ask you to build standard library tools from scratch to see if you understand how they work under the hood.
 
-* **Implement a Custom Thread Pool:** (Already covered) Manage a task queue and worker thread lifecycle.
+* ~~**Implement a Custom Thread Pool:** Manage a task queue and worker thread lifecycle.~~
 * **Implement a CountDownLatch:** Build a synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes.
 * **Implement a Custom Reentrant Lock:** Write a lock that allows the thread currently holding it to acquire it again without blocking itself.
 * **Implement a Spin Lock:** Use `AtomicReference` or `AtomicBoolean` to create a lock where waiting threads actively poll (spin) instead of yielding the CPU. Understand the performance tradeoffs versus sleeping locks.

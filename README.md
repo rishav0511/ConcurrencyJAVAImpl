@@ -105,7 +105,7 @@ These test your core understanding of `wait()`, `notifyAll()`, `ReentrantLock`, 
 * **Print Sequence / FooBar:** (Already covered) Print ordered sequences using multiple threads.
 * ~~**The Producer-Consumer Problem:** Implement a `BoundedBlockingQueue` from scratch. Expand it to handle multiple producers and multiple consumers without deadlocks.~~
 * ~~**The Reader-Writer Problem:** Implement a shared cache where multiple threads can read simultaneously, but writes require exclusive locks. *Bonus challenge: Ensure writer threads do not starve if there is a continuous influx of readers.*~~
-* **Dining Philosophers:** Write the code to simulate resource allocation. *Key focus: Guarantee absolute prevention of deadlocks by imposing lock ordering.*
+* ~~**Dining Philosophers:** Write the code to simulate resource allocation. *Key focus: Guarantee absolute prevention of deadlocks by imposing lock ordering.*~~
 * **Building H2O:** Coordinate threads representing Hydrogen and Oxygen so that water molecules are formed exactly as H-H-O.
 
 ## 2. Custom Concurrency Primitives
@@ -122,7 +122,7 @@ Interviewers often ask you to build standard library tools from scratch to see i
 These questions combine standard Data Structures and Algorithms (DSA) with concurrency control.
 
 * **Thread-Safe Singleton:** Implement the Double-Checked Locking pattern. *Key focus: Explain exactly why the `volatile` keyword is mandatory in Java for this to work safely.*
-* **Thread-Safe LRU Cache:** Combine a hash map and a doubly linked list. Ensure that concurrent reads and writes maintain O(1) time complexity without corrupting the node pointers or eviction order.
+* ~~**Thread-Safe LRU Cache:** Combine a hash map and a doubly linked list. Ensure that concurrent reads and writes maintain O(1) time complexity without corrupting the node pointers or eviction order.~~
 * **Thread-Safe Bounded Stack:** Implement `push()` and `pop()`. If full, `push()` blocks until space is available. If empty, `pop()` blocks until an item is added.
 * **Concurrent Hash Map Implementation:** Design a simplified version of `ConcurrentHashMap` using lock striping (an array of locks for different segments of the map) to allow higher throughput than a single global lock.
 

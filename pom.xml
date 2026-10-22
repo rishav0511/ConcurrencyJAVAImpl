@@ -13,6 +13,7 @@
         <module>PrintSequenceNThreads</module>
         <module>ProducerConsumerProblem</module>
         <module>ReaderWriterProblem</module>
+        <module>DiningPhilosophers</module>
     </modules>
 
     <properties>

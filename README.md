@@ -132,7 +132,7 @@ These blend low-level design (LLD) with concurrency, closely mirroring actual pr
 
 * **Design an In-Memory Rate Limiter:** Implement a Token Bucket algorithm. Ensure it is strictly thread-safe and can accurately restrict thousands of concurrent API requests per second without race conditions.
 * **Design an Asynchronous Task Scheduler:** Implement a system to execute tasks at fixed intervals or after specific delays (similar to a timer). Guarantee exact-time firing using a Priority Queue and Wait/Notify logic.
-* **Design a Database Connection Pool:** Create a manager that distributes active connections to requesting threads, blocks if the maximum pool size is reached, and safely reclaims connections upon release.
+* ~~**Design a Database Connection Pool:** Create a manager that distributes active connections to requesting threads, blocks if the maximum pool size is reached, and safely reclaims connections upon release.~~
 * **In-Memory Pub/Sub Message Broker:** Build a system where publishers push messages to specific topics, and multiple consumer threads read them asynchronously without dropping messages or corrupting the queue.
 
 ## 5. Conceptual Deep Dives (Verbal/Whiteboard)

@@ -17,6 +17,7 @@
         <module>ThreadSafeLRU</module>
         <module>ThreadSafeStack</module>
         <module>CustomThreadPool</module>
+        <module>DatabaseConnectionPool</module>
     </modules>
 
     <properties>

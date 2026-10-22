@@ -15,6 +15,7 @@
         <module>ReaderWriterProblem</module>
         <module>DiningPhilosophers</module>
         <module>ThreadSafeLRU</module>
+        <module>ThreadSafeStack</module>
     </modules>
 
     <properties>

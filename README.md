@@ -123,7 +123,7 @@ These questions combine standard Data Structures and Algorithms (DSA) with concu
 
 * **Thread-Safe Singleton:** Implement the Double-Checked Locking pattern. *Key focus: Explain exactly why the `volatile` keyword is mandatory in Java for this to work safely.*
 * ~~**Thread-Safe LRU Cache:** Combine a hash map and a doubly linked list. Ensure that concurrent reads and writes maintain O(1) time complexity without corrupting the node pointers or eviction order.~~
-* **Thread-Safe Bounded Stack:** Implement `push()` and `pop()`. If full, `push()` blocks until space is available. If empty, `pop()` blocks until an item is added.
+* ~~**Thread-Safe Bounded Stack:** Implement `push()` and `pop()`. If full, `push()` blocks until space is available. If empty, `pop()` blocks until an item is added.~~
 * **Concurrent Hash Map Implementation:** Design a simplified version of `ConcurrentHashMap` using lock striping (an array of locks for different segments of the map) to allow higher throughput than a single global lock.
 
 ## 4. Real-World Backend Components (SDE II Focus)

@@ -104,7 +104,7 @@ These test your core understanding of `wait()`, `notifyAll()`, `ReentrantLock`, 
 
 * **Print Sequence / FooBar:** (Already covered) Print ordered sequences using multiple threads.
 * ~~**The Producer-Consumer Problem:** Implement a `BoundedBlockingQueue` from scratch. Expand it to handle multiple producers and multiple consumers without deadlocks.~~
-* **The Reader-Writer Problem:** Implement a shared cache where multiple threads can read simultaneously, but writes require exclusive locks. *Bonus challenge: Ensure writer threads do not starve if there is a continuous influx of readers.*
+* ~~**The Reader-Writer Problem:** Implement a shared cache where multiple threads can read simultaneously, but writes require exclusive locks. *Bonus challenge: Ensure writer threads do not starve if there is a continuous influx of readers.*~~
 * **Dining Philosophers:** Write the code to simulate resource allocation. *Key focus: Guarantee absolute prevention of deadlocks by imposing lock ordering.*
 * **Building H2O:** Coordinate threads representing Hydrogen and Oxygen so that water molecules are formed exactly as H-H-O.
 

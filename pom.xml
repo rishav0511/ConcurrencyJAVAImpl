@@ -12,6 +12,7 @@
         <module>18.EvenOdd2Threads</module>
         <module>PrintSequenceNThreads</module>
         <module>ProducerConsumerProblem</module>
+        <module>ReaderWriterProblem</module>
     </modules>
 
     <properties>

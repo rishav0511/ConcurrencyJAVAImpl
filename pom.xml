@@ -19,6 +19,7 @@
         <module>CustomThreadPool</module>
         <module>DatabaseConnectionPool</module>
         <module>ConcurrentHashMap</module>
+        <module>CountDownLatch</module>
     </modules>
 
     <properties>

@@ -18,6 +18,7 @@
         <module>ThreadSafeStack</module>
         <module>CustomThreadPool</module>
         <module>DatabaseConnectionPool</module>
+        <module>ConcurrentHashMap</module>
     </modules>
 
     <properties>

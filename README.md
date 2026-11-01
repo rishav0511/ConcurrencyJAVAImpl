@@ -1,12 +1,11 @@
 # ConcurrencyJAVAImpl
 
 1. ~~**Print Sequence using N Threads:** Generalize the Even/Odd problem. Given `N` threads, Thread 1 prints 1, Thread 2 prints 2... Thread N prints N, Thread 1 prints N+1, etc.~~
-3. ~~**Print Even and Odd using Two Threads:** The classic problem. Thread 1 prints odd numbers, Thread 2 prints even numbers up to `N`. Practice this using:~~
+2. ~~**Print Even and Odd using Two Threads:** The classic problem. Thread 1 prints odd numbers, Thread 2 prints even numbers up to `N`. Practice this using:~~
 
    * ~~`wait()` and `notifyAll()` with a shared object monitor.~~
    * ~~`ReentrantLock` and `Condition` variables.~~
    * ~~Java `Semaphore`~~
-
 
 ## 1. Thread Coordination & Synchronization (The Classics)
 
@@ -23,8 +22,8 @@ These test your core understanding of `wait()`, `notifyAll()`, `ReentrantLock`, 
 Interviewers often ask you to build standard library tools from scratch to see if you understand how they work under the hood.
 
 * ~~**Implement a Custom Thread Pool:** Manage a task queue and worker thread lifecycle.~~
-* **Implement a CountDownLatch:** Build a synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes.
-* **Implement a Custom Reentrant Lock:** Write a lock that allows the thread currently holding it to acquire it again without blocking itself.
+* ~~**Implement a CountDownLatch:** Build a synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes.~~
+* ~~**Implement a Custom Reentrant Lock:** Write a lock that allows the thread currently holding it to acquire it again without blocking itself.~~
 * **Implement a Spin Lock:** Use `AtomicReference` or `AtomicBoolean` to create a lock where waiting threads actively poll (spin) instead of yielding the CPU. Understand the performance tradeoffs versus sleeping locks.
 
 ## 3. Thread-Safe Data Structures

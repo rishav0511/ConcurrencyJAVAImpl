@@ -20,6 +20,7 @@
         <module>DatabaseConnectionPool</module>
         <module>ConcurrentHashMap</module>
         <module>CountDownLatch</module>
+        <module>CustomReentrantLock</module>
     </modules>
 
     <properties>

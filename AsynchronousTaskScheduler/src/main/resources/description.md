@@ -1,0 +1,9 @@
+Building an Asynchronous Task Scheduler from scratch requires orchestrating a **Priority Queue** (to keep tasks ordered by their execution time) and a background worker thread that uses **timed waits** (`wait(timeout)`).
+
+When a task is scheduled, we calculate its absolute execution timestamp (`System.currentTimeMillis() + delay`). The worker thread peeks at the queue, calculates how long it needs to sleep until that exact timestamp, and goes to sleep. If a new, earlier task is submitted while the worker is sleeping, the `schedule` method uses `notify()` to wake the worker up early so it can recalculate its sleep time.
+
+## SDE II Design Discussion Points
+
+* **Dynamic Sleep Interruption:** The critical mechanism here is `queue.wait(waitTime)`. If the worker is waiting 10 seconds for Task X, and you schedule Task Y for 1 second, `schedule()` calls `queue.notify()`. The worker wakes up immediately, loops back around, sees Task Y at the head of the Priority Queue, and executes `queue.wait(1000)` instead. This guarantees exact-time firing no matter when tasks are submitted.
+* **Execution Isolation:** The actual `taskToRun.task.run()` executes *outside* the `synchronized (queue)` block. If it executed inside, and a task took 5 minutes to run, the entire scheduler would lock up. No other threads could add new tasks (because `schedule()` needs the queue lock), and no other tasks could execute.
+* **Time Drift (Fixed Rate vs Fixed Delay):** The periodic execution calculation `taskToRun.executeAt = System.currentTimeMillis() + taskToRun.period;` implements a *fixed delay* (time between the end of the last run and start of the next). If the task itself takes 5 seconds to run, the next execution gets pushed back. To implement a strict *fixed rate* (fires exactly every 2 seconds regardless of execution time), you would calculate `taskToRun.executeAt = taskToRun.executeAt + taskToRun.period`.

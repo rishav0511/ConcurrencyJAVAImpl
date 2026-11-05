@@ -21,6 +21,7 @@
         <module>ConcurrentHashMap</module>
         <module>CountDownLatch</module>
         <module>CustomReentrantLock</module>
+        <module>AsynchronousTaskScheduler</module>
     </modules>
 
     <properties>
